@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Gradient Backgrounds - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/lettering.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+    <script type="text/javascript" src="./js/textillate.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+#section0{
+		background-image: url(./images/section13.jpg);background-size: cover;
+	}
+
+	
+/*
+Blue    background: linear-gradient(to top, #33ccff 0%, #3399ff 100%);
+
+Purple background: linear-gradient(to bottom, #3399ff 0%, #9999ff 100%);
+
+background: linear-gradient(to bottom, #9999ff 0%, #9966ff 100%);
+
+Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
+*/
+
+	#section1{
+		background: -webkit-gradient(linear, top left, bottom left, from(#33ccff), to(#3399ff));
+		background: -webkit-linear-gradient(#33ccff, #3399ff);
+		background: linear-gradient(#33ccff,#3399ff);
+	}
+
+#section2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#3399ff), to(#9999ff));
+		background: -webkit-linear-gradient(#3399ff, #9999ff);
+		background: linear-gradient(#3399ff,#9999ff);
+	}
+
+#section3{
+		background: -webkit-gradient(linear, top left, bottom left, from(#9999ff), to(#9966ff));
+		background: -webkit-linear-gradient(#9999ff, #9966ff);
+		background: linear-gradient(#9999ff,#9966ff);
+	}
+	#section4{
+		background: -webkit-gradient(linear, top left, bottom left, from(#ff9999), to(#ffcc66));
+		background: -webkit-linear-gradient(#ff9999, #ffcc66);
+		background: linear-gradient(#ff9999,#ffcc66);
+	}
+	#section5{
+		background: -webkit-gradient(linear, top left, bottom left, from(#3399ff), to(#9999ff));
+		background: -webkit-linear-gradient(#3399ff, #9999ff);
+		background: linear-gradient(#3399ff,#9999ff);
+	}
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+		background: -webkit-linear-gradient(#7BAABE, #969AC6);
+		background: linear-gradient(#7BAABE,#969AC6);
+	}
+	#slide2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
+		background: -webkit-linear-gradient(#92a1ca, #76c2bd);
+		background: linear-gradient(#92a1ca,#76c2bd);
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<a href="https://github.com/alvarotrigo/fullPage.js" id="githubLink"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alvarotrigo.com/fullPage/" data-text="Great plugin to create fullscreen scrolling websites: http://alvarotrigo.com/fullPage/">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+ <div class="se-pre-con"></div>
+
+<div id="fullpage">
+	<div class="section moveDown" id="section0">
+		<div id="particles-js">
+				<p class="aa_sec tlt" >DREAM .<span class="blueText"> THINK </span>. DEVELOP</p>
+        </div> 
+		
+			
+	</div>
+	<div class="section moveDown" id="section1">
+		<div class="wrap">
+			<div class="imgsContainer">
+				<img src="./s2.png" alt="iphone" id="iphone-yellow" />
+				 
+			</div>
+
+			<div class="box">
+				<h2>Welcome to Zayentec</h2>
+				 
+<br><br>
+				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
+					<br><br>	<p style=" text-shadow: 2px 2px #000;">  You have a vision , lets's bring it to life !!</p>
+			</div>
+		</div>
+	</div>
+	<div class="section moveDown" id="section2">
+		<div class="wrap">
+			<div class="imgsContainer">
+				<img src="./s3.png" alt="iphone" id="section2picture" />
+				 
+			</div>
+
+			<div class="box">
+				<h2>Innovation is our middle name!!</h2><br><br>
+				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
+					<br><br>	<p style=" text-shadow: 2px 2px #000;">  Scroll down to read more about our beliefs </p>
+			</div>
+		</div>
+	</div>
+	<div class="section moveDown" id="section3">
+		<div class="wrap">
+			<div class="imgsContainer">
+				<img src="./s3.png" alt="iphone" id="section3picture" />
+				 
+			</div>
+
+			<div class="box">
+				<h2>Cutting Edge Technology</h2><br><br>
+				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
+					<br><br>	<p style=" text-shadow: 2px 2px #000;">  Scroll down to read more about our beliefs</p>
+			</div>
+		</div>
+	</div>
+	<div class="section moveDown" id="section4">
+		<div class="wrap">
+			<div class="imgsContainer">
+				<img src="./s3.png" alt="iphone" id="section4picture" />
+				 
+			</div>
+
+			<div class="box">
+				<h2>Pareto Principle</h2><br><br>
+				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
+					<br><br>	<p style=" text-shadow: 2px 2px #000;">  You have a vision , lets's bring it to life !!</p>
+			</div>
+		</div>
+	</div>
+	<div class="section moveDown" id="section5">
+		<div class="wrap">
+			<div class="imgsContainer">
+				<img src="./s3.png" alt="iphone" id="section5picture" />
+				 
+			</div>
+
+			<div class="box">
+				<h2>Quick Communication</h2><br><br>
+				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
+					<br><br>	<p style=" text-shadow: 2px 2px #000;">  You have a vision , lets's bring it to life !!</p>
+			</div>
+		</div>
+	</div>
+	<div class="section moveDown" id="section5">
+		<div class="wrap">
+			<div class="imgsContainer">
+				<img src="./s3.png" alt="iphone" id="section5picture" />
+				 
+			</div>
+
+			<div class="box">
+				<h2>Hear from our customers</h2><br><br>
+				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
+					<br><br>	<p style=" text-shadow: 2px 2px #000;">  You have a vision , lets's bring it to life !!</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="../jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				'css3': true,
+				'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+
+				afterLoad: function(anchorLink, index){
+					if(index == 2){
+						$('#iphone3, #iphone2, #iphone4').addClass('active');
+					}
+					$('#infoMenu').toggleClass('whiteLinks', index ==4);
+
+				},
+
+				onLeave: function(index, newIndex, direction){
+					if (index == 4 && direction == 'down'){
+						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if(index == 4 && direction == 'up'){
+						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					}
+
+					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+					$('#staticImg').toggleClass('moveDown', newIndex == 4);
+ 					$('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+				},
+
+				/*
+				Needed to maintain the fixed position of the element
+				due to problems using translate3d and fixed elements.
+				*/
+				afterRender: function(){
+					$('#infoMenu').appendTo('body');
+
+					$('#githubLink, .twitter-share-button').appendTo('body');
+				}
+
+			});
+
+			$('.tlt').textillate({ in: { effect: 'fadeIn' }  });
+
+            particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 72,
+      "density": {
+        "enable": true,
+        "value_area": 1041.558171023851
+      }
+    },
+    "color": {
+      "value": "#0b77f0"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 2,
+        "color": "#17a5f2"
+      },
+      "polygon": {
+        "nb_sides": 4
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "bounce",
+      "bounce": false,
+      "attract": {
+        "enable": true,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "window",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 175.82417582417582,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": false
+});
+
+         $(window).load(function() {
+         	setTimeout(1000);
+        $(".se-pre-con").fadeOut("slow");
+        //$("#section2").addEventListener("scroll", function(){alert('hi');});
+    });
+		});
+</script>
+  <script type="text/javascript" src="./js/myparticles.js"></script>
+</body>
+</html>
