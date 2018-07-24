@@ -11,12 +11,12 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="./js/lettering.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/animate.css" />
-    <script type="text/javascript" src="./js/textillate.js"></script>
+	<script type="text/javascript" src="./gradient/js/lettering.js"></script>
+  <link rel="stylesheet" type="text/css" href="./gradient/css/animate.css" />
+    <script type="text/javascript" src="./gradient/js/textillate.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="../jquery.fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" type="text/css" href="./jquery.fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="./gradient/examples.css" />
 	<style>
 
 	/* Style for our header texts
@@ -39,7 +39,7 @@
 	}
 
 #section0{
-		background-image: url(./images/section13.jpg);background-size: cover;
+		background-image: url(./gradient/images/section13.jpg);background-size: cover;
 	}
 
 	
@@ -127,7 +127,7 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 	<div class="section moveDown" id="section1">
 		<div class="wrap">
 			<div class="imgsContainer">
-				<img src="./s2.png" alt="iphone" id="iphone-yellow" />
+				<img src="./gradient/s2.png" alt="iphone" id="iphone-yellow" />
 				 
 			</div>
 
@@ -143,7 +143,7 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 	<div class="section moveDown" id="section2">
 		<div class="wrap">
 			<div class="imgsContainer">
-				<img src="./s3.png" alt="iphone" id="section2picture" />
+				<img src="./gradient/s3.png" alt="iphone" id="section2picture" />
 				 
 			</div>
 
@@ -157,7 +157,7 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 	<div class="section moveDown" id="section3">
 		<div class="wrap">
 			<div class="imgsContainer">
-				<img src="./s3.png" alt="iphone" id="section3picture" />
+				<img src="./gradient/s3.png" alt="iphone" id="section3picture" />
 				 
 			</div>
 
@@ -171,7 +171,7 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 	<div class="section moveDown" id="section4">
 		<div class="wrap">
 			<div class="imgsContainer">
-				<img src="./s3.png" alt="iphone" id="section4picture" />
+				<img src="./gradient/s3.png" alt="iphone" id="section4picture" />
 				 
 			</div>
 
@@ -185,7 +185,7 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 	<div class="section moveDown" id="section5">
 		<div class="wrap">
 			<div class="imgsContainer">
-				<img src="./s3.png" alt="iphone" id="section5picture" />
+				<img src="./gradient/s3.png" alt="iphone" id="section5picture" />
 				 
 			</div>
 
@@ -196,25 +196,25 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 			</div>
 		</div>
 	</div>
-	<div class="section moveDown" id="section5">
-		<div class="wrap">
-			<div class="imgsContainer">
-				<img src="./s3.png" alt="iphone" id="section5picture" />
-				 
-			</div>
+	<div class="section moveDown" id="section6">
+		
 
 			<div class="box">
-				<h2>Hear from our customers</h2><br><br>
+				  <div class="slide" id="slide1"><h2>Hear from our customers</h2><br><br>
 				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
-					<br><br>	<p style=" text-shadow: 2px 2px #000;">  You have a vision , lets's bring it to life !!</p>
-			</div>
+					</div>
+	    <div class="slide" id="slide2"><h2>Hear from our customers</h2><br><br>
+				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
+					</div>
+	
+			
 		</div>
 	</div>
 </div>
 
 
 
-<script type="text/javascript" src="../jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="./jquery.fullpage.min.js"></script>
 <script type="text/javascript" src="examples.js"></script>
 
 <script type="text/javascript">
@@ -223,7 +223,7 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 			$('#fullpage').fullpage({
 				'verticalCentered': false,
 				'css3': true,
-				'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+				'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff','#fff','#fff','#fff'],
 				'navigation': true,
 				'navigationPosition': 'right',
 				'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
@@ -237,11 +237,11 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 				},
 
 				onLeave: function(index, newIndex, direction){
-					if (index == 4 && direction == 'down'){
-						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					if (index == 6 && direction == 'down'){
+						$('.section').eq(index).removeClass('moveDown').addClass('moveUp');
 					}
-					else if(index == 4 && direction == 'up'){
-						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					else if(index == 6 && direction == 'up'){
+						$('.section').eq(index).removeClass('moveUp').addClass('moveDown');
 					}
 
 					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
@@ -381,6 +381,6 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
     });
 		});
 </script>
-  <script type="text/javascript" src="./js/myparticles.js"></script>
+  <script type="text/javascript" src="./gradient/js/myparticles.js"></script>
 </body>
 </html>
