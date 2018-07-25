@@ -417,7 +417,7 @@ img{
 	}
 
 	#section1.moveUp .imgsContainer{
-		top: 50%;
+		top: 60%;
 	}
 
 	#section1.moveDown .imgsContainer,
@@ -426,7 +426,7 @@ img{
 	}
 
 	#section1.active .imgsContainer{
-		top: 50%;
+		top: 60%;
 	}
 
 	#section1 .box{
@@ -437,7 +437,7 @@ img{
 	}
 	/*section 2*/
 #section2.moveUp .imgsContainer,#section4.moveUp .imgsContainer{
-		top: 50%; left:100%;
+		top: 60%; left:100%;
 	}
 
 	#section2.moveDown .imgsContainer,#section4.moveDown .imgsContainer
@@ -450,7 +450,7 @@ img{
 	}
 
 	#section2.active .imgsContainer,#section4.active .imgsContainer{
-		top: 60%; left:110%;
+		top: 70%; left:100%;
 	}
 
 	#section2 .box,#section4 .box{
