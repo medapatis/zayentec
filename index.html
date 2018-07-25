@@ -103,7 +103,33 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 		background: linear-gradient(#92a1ca,#76c2bd);
 	}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   // background-color: #333;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #0b77f0;
+}
+
+.active {
+    background-color: #0b77f0;
+}
 	/* Bottom menu
 	* --------------------------------------- */
 	#infoMenu li a {
@@ -118,7 +144,17 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 	<![endif]-->
 </head>
 <body>
+ 
+	<ul style="float:right;position: fixed;z-index:99; top: 0; right: 0; border: 0;">
+  <li ><a class="active" ="#home">Home</a></li>
+  <li  > <a href="#news">Services</a></li>
+  <li  ><a href="#contact">Industries</a></li>
+  <li  ><a   href="#about">About</a></li>
+  <li  ><a  href="#about">Contact Us</a></li>
+</ul>
+	
 
+ 
 <!--a href="https://github.com/alvarotrigo/fullPage.js" id="githubLink"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alvarotrigo.com/fullPage/" data-text="Great plugin to create fullscreen scrolling websites: http://alvarotrigo.com/fullPage/">Tweet</a-->
@@ -130,10 +166,18 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 				data-typing-cursor=false></div>
 		<div id="particles-js">
 			<p class="aa_sec tlt" >DREAM .<span class="blueText"> THINK </span>. DEVELOP</p>
-			<br>
+			<br><p>
 			<span class="dwd-typed" style="display:none;opacity:0;visibility:hidden;">ڈیجیٹل تبدیلی  |Digital Transformation|Artificial Intelligence|Development|Delivery|Automation|Scalable software|Social Media Presence|UI/UX|Innovation|Security|Business Acceleration</span>
-			<span class="dwd-typing dwd"></span>
-			<span class="dwd-aftertext"></span>
+			<span class="dwd-typing dwd" style="z-index:999;	
+   margin-top: 400px;
+    right: 0;
+    left: 0;
+    bottom:0;
+font-size:30px;
+font-weight:300;
+    color: white;
+ "></span>
+			<span class="dwd-aftertext"></span></p>
           </div>
 		
 			
@@ -146,12 +190,12 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 				 
 			</div>
 
-			<div class="box">
-				<h2>Welcome to Zayentec</h2>
+			<div class="box"  ><br>
+				<h2 style="padding-top:10px">Welcome to Zayentec</h2>
 				 
-<br><br>
-				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
-					<br><br>	<p style=" text-shadow: 2px 2px #000;">  You have a vision , lets's bring it to life !!</p>
+<br> 
+				<p style="padding : 10px 10px 10px 20px;text-align: center">We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. </p><p style="padding : 10px 10px 10px 20px;text-align: center">Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable- sustainable applications with new tech stacks.</p> <p style="padding : 10px 10px 10px 20px;text-align: center"> Zayentecers don't just build a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
+					<br> 	<p style=" padding : 10px 10px 10px 20px; text-align: center; font-weight: bold;">  You have a vision , lets's bring it to life !!</p>
 			</div>
 		</div>
 	</div>

@@ -575,13 +575,13 @@ font-weight:600;
     margin: 0  auto;color: #0b77f0
 }
 
-	
-	 .dwd  {
+	span.typed-cursor,
+	 span.dwd  {
 		z-index:999;	
    top: 40%;
     right: 0;
     left: 0;
-font-size:70px;
+font-size:40px;
 font-weight:600;
     margin: 0  auto;color: white;
  

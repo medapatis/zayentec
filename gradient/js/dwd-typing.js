@@ -1,5 +1,5 @@
 (function($) {
-    var fhetyping = $('#section0');
+    var fhetyping = $('.section');
     $(fhetyping).not('.dwd-sm-fade').each(function(index, value) {
         var $this = $(this),
             $textforscroll = $(".dwd-typed", value).text(),
