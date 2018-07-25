@@ -54,11 +54,14 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 */
 
 	#section1{
-		background: -webkit-gradient(linear, top left, bottom left, from(#33ccff), to(#3399ff));
+		background-size: cover; background:url(./gradient/images/section13.jpg);z-index:9;
+	}
+.overlay1{
+	background: -webkit-gradient(linear, top left, bottom left, from(#33ccff), to(#3399ff));
 		background: -webkit-linear-gradient(#33ccff, #3399ff);
 		background: linear-gradient(#33ccff,#3399ff);
-	}
-
+		opacity: 0.5;z-index:10;width:100%; height:100%; transition: opacity .5s;
+}
 #section2{
 		background: -webkit-gradient(linear, top left, bottom left, from(#3399ff), to(#9999ff));
 		background: -webkit-linear-gradient(#3399ff, #9999ff);
@@ -125,7 +128,8 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 			
 	</div>
 	<div class="section moveDown" id="section1">
-		<div class="wrap">
+
+		<div class="wrap overlay1">
 			<div class="imgsContainer">
 				<img src="./gradient/s2.png" alt="iphone" id="iphone-yellow" />
 				 
