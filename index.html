@@ -112,19 +112,19 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 		background: linear-gradient(#92a1ca,#76c2bd);
 	}
 
-ul {
+#infomenu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-   // background-color: #333;
+    
 }
 
-li {
+#infomenu li {
     float: left;
 }
 
-li a {
+#infomenu li a {
     display: block;
     color: white;
     text-align: center;
@@ -132,18 +132,59 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+/*#infomenu li a:hover:not(.active) {
     background-color: #0b77f0;
-}
+}*/
 
-.active {
+/*#infomenu .active {
     background-color: #0b77f0;
+}*/
+
+ 
+ 
+#infomenu a:hover,#infomenu a:focus,#infomenu a:active {
+    color: #fff;
+    text-decoration: none;
+}
+#infomenu a {
+    
+    transition: color 0.1s, background-color 0.1s;
+}
+#infomenu a {
+    position: relative;
+    display: block;
+    
+     
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 200;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #fff;
+}
+#infomenu a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fcc012;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+#infomenu a:active::before {
+    background-color: #fff;
+}
+#infomenu a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
 }
 	/* Bottom menu
 	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
+	 
 	</style>
 
 	<!--[if IE]>
@@ -153,7 +194,7 @@ li a:hover:not(.active) {
 	<![endif]-->
 </head>
 <body>
- 
+ <div id="infomenu">
 	<ul style="float:right;position: fixed;z-index:99; top: 0; right: 0; border: 0;">
   <li ><a class="active" ="#home">Home</a></li>
   <li  > <a href="#news">Services</a></li>
@@ -162,7 +203,7 @@ li a:hover:not(.active) {
   <li  ><a  href="#about">Contact Us</a></li>
 </ul>
 	
-
+</div>
  
 <!--a href="https://github.com/alvarotrigo/fullPage.js" id="githubLink"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
@@ -211,12 +252,7 @@ font-weight:200;
 				<p style="padding : 10px 10px 10px 20px;text-align: center">We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. </p><p style="padding : 10px 10px 10px 20px;text-align: center">Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable- sustainable applications with new tech stacks.</p> <p style="padding : 10px 10px 10px 20px;text-align: center"> Zayentecers don't just build a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
 					<br> 	<p style=" padding : 10px 10px 10px 20px; text-align: center; font-weight: bold;">  You have a vision , lets's bring it to life !!</p>
 			</div>
-			<div class="footer">
-  <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-</div>
+			 
 		</div>
 	</div>
 	<div class="section moveDown" id="section2">
@@ -231,12 +267,7 @@ font-weight:200;
 				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
 					<br><br>	<p style=" text-shadow: 2px 2px #000;">  Scroll down to read more about our beliefs </p>
 			</div>
-			<div class="footer">
-  <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-</div>
+			 
 		</div>
 	</div>
 	<div class="section moveDown" id="section3">
@@ -251,12 +282,7 @@ font-weight:200;
 				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
 					<br><br>	<p style=" text-shadow: 2px 2px #000;">  Scroll down to read more about our beliefs</p>
 			</div>
-			<div class="footer">
-  <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-</div>
+			 
 		</div>
 	</div>
 	<div class="section moveDown" id="section4">
@@ -271,12 +297,7 @@ font-weight:200;
 				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
 					<br><br>	<p style=" text-shadow: 2px 2px #000;">  You have a vision , lets's bring it to life !!</p>
 			</div>
-			<div class="footer">
-  <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-</div>
+			 
 		</div>
 	</div>
 	<div class="section moveDown" id="section5">
@@ -291,12 +312,7 @@ font-weight:200;
 				<p >We are a group of self-motivated <strong>dreamers, thinkers and doers</strong>. Coding is our passion and we absolutely love to experiment with new technologies. We stay ahead of the game and build scalable and sustainable applications with new tech stacks. We don't just create a product, we bring a transformation and empower you with tools to succeed in your business and to step into the future with swag. </p>
 					<br><br>	<p style=" text-shadow: 2px 2px #000;">  You have a vision , lets's bring it to life !!</p>
 			</div>
-			<div class="footer">
-  <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-</div>
+			 
 		</div>
 	</div>
 	<div class="section moveDown" id="section6">
