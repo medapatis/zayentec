@@ -39,7 +39,7 @@
 	/* Centered texts in each section
 	* --------------------------------------- */
 	.section{
-		text-align:center;background-image: url(./gradient/images/section13.jpg);background-size: cover; color:white;
+		text-align:center;color:black;background-image: url(./gradient/images/section13.jpg);background-size: cover;
 	}
 
 #section0{
@@ -67,38 +67,42 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
 */
 
 	#section1{
-		  background:url(./gradient/images/section13.jpg);z-index:9;background-size: 100%;
+		 // background:url(./gradient/images/section13.jpg); z-index:9;background-size: 100%;
 	}
 .overlay1{
-	background: -webkit-gradient(linear, top left, bottom left, from(#33ccff), to(#3399ff));
-		background: -webkit-linear-gradient(#33ccff, #3399ff);
-		background: linear-gradient(#33ccff,#3399ff);
+	background: -webkit-gradient(linear, top left, bottom left, from(#808080), to(#A9A9A9));
+		background: -webkit-linear-gradient(#808080, #A9A9A9);
+		background: linear-gradient(#808080,#A9A9A9);
 		opacity: 0.7;z-index:10;width:100%; height:100%; transition: opacity .5s;
 }
 .overlay2{
-		background: -webkit-gradient(linear, top left, bottom left, from(#3399ff), to(#9999ff));
-		background: -webkit-linear-gradient(#3399ff, #9999ff);
-		background: linear-gradient(#3399ff,#9999ff);
+		background: -webkit-gradient(linear, top left, bottom left, from(#A9A9A9), to(#C0C0C0));
+		background: -webkit-linear-gradient(#A9A9A9, #C0C0C0);
+		background: linear-gradient(#A9A9A9,#C0C0C0);
 		opacity: 0.7;z-index:10;width:100%; height:100%; transition: opacity .5s;
 
 	}
 
 .overlay3{
-		background: -webkit-gradient(linear, top left, bottom left, from(#9999ff), to(#9966ff));
-		background: -webkit-linear-gradient(#9999ff, #9966ff);
-		background: linear-gradient(#9999ff,#9966ff);opacity: 0.7;z-index:10;width:100%; height:100%; transition: opacity .5s;
+		background: -webkit-gradient(linear, top left, bottom left, from(#C0C0C0), to(#D3D3D3));
+		background: -webkit-linear-gradient(#C0C0C0, #D3D3D3);
+		background: linear-gradient(#C0C0C0,#D3D3D3);opacity: 0.7;z-index:10;width:100%; height:100%; transition: opacity .5s;
 	}
 	.overlay4{
-		background: -webkit-gradient(linear, top left, bottom left, from(#ff9999), to(#ffcc66));
-		background: -webkit-linear-gradient(#ff9999, #ffcc66);
-		background: linear-gradient(#ff9999,#ffcc66);opacity: 0.7;z-index:10;width:100%; height:100%; transition: opacity .5s;
+		background: -webkit-gradient(linear, top left, bottom left, from(#D3D3D3), to(#ffffff));
+		background: -webkit-linear-gradient(#D3D3D3, #ffffff);
+		background: linear-gradient(#D3D3D3,#D3D3D3);opacity: 0.7;z-index:10;width:100%; height:100%; transition: opacity .5s;
 	}
 	.overlay5{
 		background: -webkit-gradient(linear, top left, bottom left, from(#3399ff), to(#9999ff));
 		background: -webkit-linear-gradient(#3399ff, #9999ff);
 		background: linear-gradient(#3399ff,#9999ff);opacity: 0.7;z-index:10;width:100%; height:100%; transition: opacity .5s;
 	}
-
+.grayoverlay{
+		background: -webkit-gradient(linear, top left, bottom left, from(#D3D3D3), to(#ffffff));
+		background: -webkit-linear-gradient(#D3D3D3, #ffffff);
+		background: linear-gradient(#D3D3D3,#D3D3D3);opacity: 0.7;z-index:10;width:100%; height:100%; transition: opacity .5s;
+	}
  	/*Adding background for the slides
 	* --------------------------------------- */
 	#slide1{
@@ -131,7 +135,9 @@ Orange   background: linear-gradient(to bottom, #ff9999 0%, #ffcc66 100%);
     padding: 14px 16px;
     text-decoration: none;
 }
-
+.blueColor{
+	color:#0b77f0;
+}
 /*#infomenu li a:hover:not(.active) {
     background-color: #0b77f0;
 }*/
@@ -244,7 +250,7 @@ font-weight:200;
 	</div>
 	<div class="section moveDown" id="section1">
 
-		<div class="wrap overlay1">
+		<div class="wrap grayoverlay">
 			<div class="imgsContainer">
 				<img src="./gradient/s2.png" alt="iphone" id="iphone-yellow" />
 				 
@@ -260,7 +266,7 @@ font-weight:200;
 		</div>
 	</div>
 	<div class="section moveDown" id="section2">
-		<div class="wrap overlay2">
+		<div class="wrap grayoverlay">
 			<div class="imgsContainer">
 				<img src="./gradient/s3.png" alt="iphone" id="section2picture" />
 				 
@@ -275,7 +281,7 @@ font-weight:200;
 		</div>
 	</div>
 	<div class="section moveDown" id="section3">
-		<div class="wrap overlay3">
+		<div class="wrap grayoverlay">
 			<div class="imgsContainer">
 				<img src="./gradient/s3.png" alt="iphone" id="section3picture" />
 				 
@@ -290,7 +296,7 @@ font-weight:200;
 		</div>
 	</div>
 	<div class="section moveDown" id="section4">
-		<div class="wrap overlay4">
+		<div class="wrap grayoverlay">
 			<div class="imgsContainer">
 				<img src="./gradient/s3.png" alt="iphone" id="section4picture" />
 				 
@@ -305,7 +311,7 @@ font-weight:200;
 		</div>
 	</div>
 	<div class="section moveDown" id="section5">
-		<div class="wrap overlay5">
+		<div class="wrap grayoverlay">
 			<div class="imgsContainer">
 				<img src="./gradient/s3.png" alt="iphone" id="section5picture" />
 				 
@@ -354,11 +360,13 @@ font-weight:200;
 					if(index == 2){
 						$('#iphone3, #iphone2, #iphone4').addClass('active');
 					}
+					 
 					$('#infoMenu').toggleClass('whiteLinks', index ==4);
 
 				},
 
 				onLeave: function(index, newIndex, direction){
+					 
 					if (index == 6 && direction == 'down'){
 						$('.section').eq(index).removeClass('moveDown').addClass('moveUp');
 					}

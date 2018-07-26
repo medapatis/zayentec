@@ -65,11 +65,11 @@ h1{
 }
 h2{
 	font-size: 2em;
-	color : yellow;
+	color : #0b77f0;
 }
 p{
 	font-size: 1em;
-	color:white; text-align: :center;
+	color:black; text-align: :center;
 }
 .intro p{
 	width: 50%;
